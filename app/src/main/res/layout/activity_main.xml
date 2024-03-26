@@ -8,53 +8,63 @@
     android:id="@+id/main">
 
     <TextView
-        android:id="@+id/textViewTitle"
+        android:id="@+id/appTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kalkulator popusta"
-        android:textSize="24sp"
+        android:text="@string/app_title"
+        android:textSize="27sp"
         android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/origPriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appTitle"
+        android:layout_marginTop="40dp"
+        android:text="@string/orig_price"
+        android:labelFor="@id/origPriceInput"
+        android:layout_marginStart="15dp"/>
+
+    <EditText
+        android:id="@+id/origPriceInput"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/origPriceLabel"
+        android:layout_marginTop="8dp"
+        android:inputType="numberDecimal"
+        android:autofillHints="@id/origPriceLabel"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/percentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/origPriceInput"
+        android:layout_marginTop="25dp"
+        android:text="@string/discount"
+        android:labelFor="@id/percentInput"
+        android:layout_marginStart="15dp"/>
+
+    <EditText
+        android:id="@+id/percentInput"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/percentLabel"
+        android:layout_marginTop="8dp"
+        android:inputType="numberDecimal"
+        android:autofillHints="@string/discount"
         android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:id="@+id/textViewIzvornaCijena"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewTitle"
-        android:layout_marginTop="24dp"
-        android:text="Izvorna cijena"/>
-
-    <EditText
-        android:id="@+id/editTextIzvornaCijena"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewIzvornaCijena"
-        android:layout_marginTop="8dp"
-        android:inputType="numberDecimal"/>
-
-    <TextView
-        android:id="@+id/textViewPopust"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextIzvornaCijena"
-        android:layout_marginTop="24dp"
-        android:text="Popust(%)"/>
-
-    <EditText
-        android:id="@+id/editTextPopust"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewPopust"
-        android:layout_marginTop="8dp"
-        android:inputType="numberDecimal"/>
 
     <TextView
         android:id="@+id/textViewResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextPopust"
-        android:layout_marginTop="24dp"
-        android:text="Rezultat"
+        android:layout_below="@id/percentInput"
+        android:layout_marginTop="27dp"
+        android:text="@string/result"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"/>
 
