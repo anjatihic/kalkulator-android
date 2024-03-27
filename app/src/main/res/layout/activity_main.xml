@@ -76,4 +76,20 @@
         android:layout_marginTop="8dp"
         android:layout_centerHorizontal="true"/>
 
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResult"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/changeThemeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_theme_text"
+        android:layout_toEndOf="@+id/seekBar"
+        android:layout_alignBottom="@+id/seekBar"
+        android:labelFor="@id/seekBar"
+        />
+
 </RelativeLayout>

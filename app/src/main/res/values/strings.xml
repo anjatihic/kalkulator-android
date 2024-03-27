@@ -3,4 +3,5 @@
     <string name="orig_price">Izvorna cijena</string>
     <string name="discount">Popust (%)</string>
     <string name="result">Rezultat</string>
+    <string name="change_theme_text">Promijeni temu aplikacije</string>
 </resources>
