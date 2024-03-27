@@ -11,11 +11,12 @@
         android:id="@+id/appTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_title"
-        android:textSize="27sp"
-        android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginTop="25dp"
+        android:text="@string/app_title"
+        android:textColor="@color/hot_pink"
+        android:textSize="27sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/origPriceLabel"
@@ -32,11 +33,11 @@
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_below="@id/origPriceLabel"
-        android:layout_marginTop="8dp"
-        android:inputType="numberDecimal"
-        android:autofillHints="@id/origPriceLabel"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="8dp"
+        android:autofillHints="@id/origPriceLabel"
+        android:inputType="numberDecimal"
+        android:textColor="@color/hot_pink" />
 
     <TextView
         android:id="@+id/percentLabel"
@@ -53,28 +54,32 @@
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_below="@id/percentLabel"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
-        android:inputType="numberDecimal"
         android:autofillHints="@string/discount"
-        android:layout_centerHorizontal="true"/>
+        android:inputType="numberDecimal"
+        android:textColor="@color/hot_pink" />
 
     <TextView
         android:id="@+id/textViewResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/percentInput"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
         android:text="@string/result"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"/>
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewCalculationResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewResult"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
-        android:layout_centerHorizontal="true"/>
+        android:textAlignment="center"
+        android:textStyle="bold" />
 
     <SeekBar
         android:id="@+id/seekBar"
