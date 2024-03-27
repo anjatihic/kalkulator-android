@@ -4,4 +4,5 @@
     <string name="discount">Popust (%)</string>
     <string name="result">Rezultat</string>
     <string name="change_theme_text">Promijeni temu aplikacije</string>
+    <string name="calculate">Izračunaj</string>
 </resources>

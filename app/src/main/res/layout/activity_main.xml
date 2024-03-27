@@ -60,16 +60,26 @@
         android:inputType="numberDecimal"
         android:textColor="@color/hot_pink" />
 
-    <TextView
-        android:id="@+id/textViewResult"
+    <Button
+        android:id="@+id/calculateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/percentInput"
         android:layout_centerHorizontal="true"
+        android:text="@string/calculate"
+        android:onClick="calculateDiscountedP"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
         android:text="@string/result"
         android:textColor="@color/blue"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/textViewCalculationResult"
