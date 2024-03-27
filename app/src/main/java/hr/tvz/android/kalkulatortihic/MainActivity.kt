@@ -5,13 +5,12 @@ import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
-import android.widget.SeekBar
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.snackbar.Snackbar
 import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity() {
@@ -25,26 +24,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val seekBar = findViewById<SeekBar>(R.id.seekBar)
-
-        //seekBar listener
-        seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
-            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                Toast.makeText(this@MainActivity, "Hello $progress", Toast.LENGTH_LONG).show()
-            }
-
-            override fun onStartTrackingTouch(seekBar: SeekBar) {
-                // This method is called when the user starts tracking touch on the seek bar
-            }
-
-            override fun onStopTrackingTouch(seekBar: SeekBar) {
-                // This method is called when the user stops tracking touch on the seek bar
-            }
-        })
-
     }
 
     fun calculateDiscountedP(view: View){
+        //close keyboard
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(view.windowToken, 0)
 
@@ -67,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                 append(" €")
             }
         }else{
-            Toast.makeText(this@MainActivity, "Please input both numbers", Toast.LENGTH_LONG).show()
+            Snackbar.make(view, "Unesite oba dva broja", Snackbar.LENGTH_LONG).show()
         }
 
     }
