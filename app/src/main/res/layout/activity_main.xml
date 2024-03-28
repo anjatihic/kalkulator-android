@@ -66,8 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/percentInput"
         android:layout_centerHorizontal="true"
-        android:text="@string/calculate"
-        android:onClick="calculateDiscountedP"/>
+        android:text="@string/calculate"/>
 
     <TextView
         android:id="@+id/textViewResult"

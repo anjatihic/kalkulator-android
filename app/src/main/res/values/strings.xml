@@ -5,4 +5,5 @@
     <string name="result">Rezultat</string>
     <string name="change_theme_text">Promijeni temu aplikacije</string>
     <string name="calculate">Izračunaj</string>
+    <string name="valid_message">Unesite oba dva broja</string>
 </resources>
