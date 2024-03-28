@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_title">Discount Calculator</string>
+    <string name="orig_price">Original price</string>
+    <string name="discount">Discount (%)</string>
+    <string name="result">Result</string>
+    <string name="change_theme_text">Change app theme</string>
+    <string name="calculate">Calculate</string>
+    <string name="valid_message">Input both numbers</string>
+</resources>

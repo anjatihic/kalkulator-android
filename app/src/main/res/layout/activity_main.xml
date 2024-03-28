@@ -105,5 +105,11 @@
         android:layout_alignBottom="@+id/seekBar"
         android:labelFor="@id/seekBar"
         />
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:entries="@array/languages"/>
 
 </RelativeLayout>

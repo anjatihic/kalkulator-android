@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_title">Calcolatore di sconti</string>
+    <string name="orig_price">Prezzo originale</string>
+    <string name="discount">Sconto (%)</string>
+    <string name="result">Risultato</string>
+    <string name="change_theme_text">Cambia il tema dell\'app</string>
+    <string name="calculate">Calcolare</string>
+    <string name="valid_message">Inserisci entrambi i numeri</string>
+</resources>
