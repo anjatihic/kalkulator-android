@@ -14,9 +14,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:text="@string/app_title"
-        android:textColor="@color/hot_pink"
         android:textSize="27sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"/>
 
     <TextView
         android:id="@+id/origPriceLabel"
@@ -36,8 +36,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         android:autofillHints="@id/origPriceLabel"
-        android:inputType="numberDecimal"
-        android:textColor="@color/hot_pink" />
+        android:inputType="numberDecimal" />
 
     <TextView
         android:id="@+id/percentLabel"
@@ -57,8 +56,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         android:autofillHints="@string/discount"
-        android:inputType="numberDecimal"
-        android:textColor="@color/hot_pink" />
+        android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/calculateButton"
@@ -76,9 +74,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
         android:text="@string/result"
-        android:textColor="@color/blue"
         android:textStyle="bold"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        android:textColor="?attr/colorSecondary"/>
 
     <TextView
         android:id="@+id/textViewCalculationResult"
@@ -90,20 +88,14 @@
         android:textAlignment="center"
         android:textStyle="bold" />
 
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewResult"
-        android:layout_marginTop="40dp"/>
-    <TextView
-        android:id="@+id/changeThemeTextView"
-        android:layout_width="wrap_content"
+
+    <Switch
+        android:id="@+id/switchTheme"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/change_theme_text"
-        android:layout_toEndOf="@+id/seekBar"
-        android:layout_alignBottom="@+id/seekBar"
-        android:labelFor="@id/seekBar"
-        />
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 </RelativeLayout>
